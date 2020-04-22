@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to MySite!!!</h1>
+    <h1>Welcome to MySite!!</h1>
   </div>
 </template>
 
@@ -14,9 +14,13 @@ export default {
   h1 {
     text-align: center;
     margin: auto;
-    font-size: 70px;
-    margin-top: 290px;
-    font-family: 'Oswald', sans-serif;
-    color: #00FF7F;
+    font-size: 90px;
+    margin-top: 250px;
+    font-family: 'Amatic SC', cursive;
+    cursor: pointer;
+    color: cadetblue;
+  }
+  h1:hover{
+    color: black;
   }
 </style>
