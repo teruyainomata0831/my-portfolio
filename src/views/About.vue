@@ -1,60 +1,56 @@
 <template>
   <div>
-    <img src="../assets/img.jpeg">
-    <h1>teruya inomata</h1>
-    <p>経歴
+    <img src="../assets/img.png">
+    <h1>teruya inomata <router-link to="/skill">&gt;</router-link></h1>
+    <p>対応力抜群のWebフリーランス。
       <br>
-      2019年12月TECH::EXPERT卒、
-      2020年1月Web製作会社勤務
-    </p>
-    <p>Web系フリーランスとして活動中
-      <br>
-      HTML,CSS,Javascript,Vue,php,
-      WordPressを用いたHP製作できます！
-    </p>
-    <p>Active as a web freelance
-      <br>
-      HTML, CSS, Javascript, Vue, php,
-      You can make a website using WordPress!
+      LP・HP制作、メディア運用、記事制作できます。
     </p>
     <div class="fabs">
-      <a href="https://github.com/teruyainomata0831" target="_blank" class="fab orange" tooltip="Github"><i class="sec zmdi zmdi-codepen animated"></i></a>
-
-      <a href="https://www.instagram.com/teruya_inomata/" target="_blank" class="fab red" tooltip="Instagram"><i class="sec zmdi zmdi-google-plus animated"></i></a>
-
-      <a href="https://twitter.com/teruya_inomata/" target="_blank" class="fab light-blue" tooltip="Twitter"><i class="sec zmdi zmdi-twitter animated"></i></a>
-
-      <a href="https://www.facebook.com/profile.php?id=100041095860085" target="_blank" class="fab indigo" tooltip="Facebook"><i class="sec zmdi zmdi-facebook animated"></i></a>
-
+      <a href="https://github.com/teruyainomata0831" target="_blank" class="fab orange" tooltip="Github"><i class="sec zmdi zmdi-codepen animated"></i>
+      <font-awesome-icon :icon="['fab', 'github']" />
+      </a>
+      <a href="https://www.instagram.com/teruya_inomata/" target="_blank" class="fab red" tooltip="Instagram"><i class="sec zmdi zmdi-google-plus animated"></i>
+      <font-awesome-icon :icon="['fab', 'instagram']" />
+      </a>
+      <a href="https://twitter.com/teruya_inomata/" target="_blank" class="fab light-blue" tooltip="Twitter"><i class="sec zmdi zmdi-twitter animated"></i>
+      <font-awesome-icon :icon="['fab', 'twitter']" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100041095860085" target="_blank" class="fab indigo" tooltip="Facebook"><i class="sec zmdi zmdi-facebook animated"></i><font-awesome-icon :icon="['fab', 'facebook']" /></a>
       <a target="_blank" class="fab red" tooltip="Share"><i class="prime zmdi animated rotateIn zmdi-plus"></i></a>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue'
 export default {
+  components: {
+    Footer
+  }
 }
 </script>
 
 <style scoped>
   h1 {
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
   }
-
+  p{
+    text-align: center;
+    font-size: 15px;
+  }
   img {
     border-radius: 100px;
     width: 110px;
     display: block;
     margin: auto;
     margin-top: 50px;
-  }
-
-  p{
-    text-align: center;
-    font-size: 15px;
-    padding: 5px;
   }
   .fabs {
   bottom: 0;

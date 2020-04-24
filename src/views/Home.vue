@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <h1>Welcome to MySite!!</h1>
+  <div class="home">
+    <h1>Welcome to MySite / <router-link to="/about">&gt;</router-link></h1>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue'
 export default {
-
+  components: {
+    Footer
+  }
 }
 </script>
 
@@ -14,13 +18,16 @@ export default {
   h1 {
     text-align: center;
     margin: auto;
-    font-size: 90px;
+    font-size: 70px;
     margin-top: 250px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Playfair Display', serif;
     cursor: pointer;
-    color: cadetblue;
-  }
-  h1:hover{
-    color: black;
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>
